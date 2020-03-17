@@ -126,7 +126,7 @@ h2 {
 .navbar a:hover {
     font-weight: bold;
     transition: font-weight 0.1s ease-in-out;
-} 
+}
 .navbar a:active {
     color: #0A7E00;
     font-size: 1.2rem;
@@ -195,9 +195,10 @@ h2 {
     width: 100%;
     height: auto;
     display: inline-flex;
-    padding: 30px 30px 30px 0;
+    padding: 30px 0 30px 0;
     max-height: 450px;
 }
+/* si quiero el banner a pantalla completa padding: 120px 0 110px 0; max-height: 620px; */
 #img-container-logo {
     width: 33%;
     min-width: 330px;
@@ -252,7 +253,7 @@ h2 {
         display: block;
         padding: 140px 0 60px 0;
     }
-    
+
     #img-container-logo {
         position: relative;
         margin: 0 auto;
@@ -292,7 +293,7 @@ h2 {
 .article h1 {
     line-height: 1.2;
 }
-   
+
 /* Info Media ---------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .article {
@@ -325,4 +326,27 @@ h2 {
     width: 100%;
     height: 150px;
     background-color: #0A7E00;
+    display: flex;
+    align-content: center;
+}
+.footer ul {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer .contacto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer a {
+    text-decoration: none;
+    color: #F7FAF3;
+    font-family: "Century Gothic", "Open Sans", sans-serif;
+}
+.footer i {
+    font-size: 2.5rem;
+    color: #F7FAF3;
+    padding: 0 1rem;
 }
