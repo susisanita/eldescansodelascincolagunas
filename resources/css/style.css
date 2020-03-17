@@ -157,6 +157,10 @@ h2 {
     .icon-txt {
         display: none;
     }
+    .icon img {
+        height: 36px;
+        padding-right: 0;
+    }
     .navbar #navbar-txt {
         display: none;
     }
