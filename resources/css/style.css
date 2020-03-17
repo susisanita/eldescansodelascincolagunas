@@ -1,0 +1,277 @@
+/* Fonts */
+@font-face {
+    font-family: "Viner";
+    src: url("../fonts/VINERITC.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/GOTHIC.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/GOTHICB.TTF") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/GOTHICI.TTF") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/GOTHICBI.TTF") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* General ----------------------------------------------------------------- */
+
+body {
+    margin: 0 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    background-color: #F7FAF3;
+}
+main {
+    padding-top: 64px;
+
+}
+h1 {
+    font-family: "Viner";
+    font-size: 3rem;
+}
+h2 {
+    font-family: "Viner";
+    font-size: 2rem;
+}
+
+/* HEADER ------------------------------------------------------------------- */
+.header {
+    background-color: #F0EED8;
+    width: 100%;
+    min-height: 64px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #F7FAF3;
+}
+
+/* Icon */
+.descanso {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 25%;
+}
+.icon img {
+    height: 45px;
+    width: auto;
+    vertical-align: center;
+    padding-right: 0.5rem;
+}
+.icon-txt img {
+    height: 60px;
+    width: auto;
+    vertical-align: center;
+}
+/* #descanso-txt {
+    color: #064A00;
+    font-family: "Viner";
+    font-size: 1.7rem;
+} */
+
+/* Navbar */
+.navbar {
+    width: 75%;
+    font-family: "Century Gothic", "Open Sans", sans-serif;
+}
+.navbar ul {
+    display: inline-flex;
+    width:100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+}
+.navbar li {
+    padding: 0.5rem 0 0.5rem 3rem;
+}
+.navbar a {
+    text-decoration: none;
+    color: #064A00;
+    text-transform: uppercase;
+}
+#lg {
+    display: none;
+}
+/* Navbar OLD */
+/* .navbar {
+    background-color: #F0EED8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 50px;
+    vertical-align: center;
+}
+.navbar li {
+    display: inline-block;
+    padding: 10px 70px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #064A00;
+    font-family: "Century Gothic", "Open Sans", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+}*/
+
+/* Header States ---------------------------------------------*/
+.navbar a:hover {
+    font-weight: bold;
+    transition: font-weight 0.1s ease-in-out;
+} 
+.navbar a:active {
+    color: #0A7E00;
+    font-size: 1.2rem;
+    transition: color .1s ease-in, font-size .1s ease-in;
+}
+/* Header Media ---------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .icon-txt {
+        display: none;
+    }
+    .navbar #navbar-txt {
+        display: none;
+    }
+    #lg {
+        display: inline-block;
+        color: #064A00;
+        font-size: 1.5rem;
+    }
+    .navbar ul {
+        display: inline-flex;
+        width:100%;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+    .navbar li {
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    .navbar i:hover {
+        font-size: 1.8rem;
+        transition: font-size 0.1s ease-in;
+    }
+    .navbar i:active {
+        color: #0A7E00;
+        transition: color .1s ease-in;
+    }
+}
+
+/* BANNER ------------------------------------------------------------------- */
+.banner {
+    background-color: #0A7E00;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    padding: 30px 30px 30px 0;
+    max-height: 450px;
+}
+#img-container-logo {
+    width: 33%;
+    min-width: 330px;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    display: block;
+    padding-top: 30px;
+    flex-shrink: 1;
+}
+#img-container-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.txt-container-logo {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    flex-shrink: 1;
+}
+.banner h1 {
+    font-size: 8rem;
+    color: #F7FAF3;
+    padding-top: 80px;
+    margin-left: -50px;
+}
+.banner h2 {
+    font-size: 3.3rem;
+    color: #F7FAF3;
+    padding-left: 90px;
+}
+
+/* Banner Media ---------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .txt-container-logo {
+        width: 100%;
+    }
+    .banner h1 {
+        font-size: 5.4rem;
+        color: #F7FAF3;
+        margin-left: -80px;
+    }
+    .banner h2 {
+        font-size: 2.2rem;
+        color: #F7FAF3;
+        padding-left: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .banner {
+        display: block;
+        position: absolute;
+        max-height: 310px;
+        padding: 20px 0 0 0;
+    }
+    
+    #img-container-logo {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 380px;
+        padding-top: 0;
+    }
+    .txt-container-logo {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        top: -350px;
+    }
+    .banner h1 {
+        font-size: 4.2rem;
+        color: #F7FAF3;
+        padding-top: 80px;
+        margin: 0 auto;
+    }
+    .banner h2 {
+        font-size: 1.7rem;
+        color: #F7FAF3;
+        padding-left: 80px;
+        margin: 0 auto;
+    }
+}
