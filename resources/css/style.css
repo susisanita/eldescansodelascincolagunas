@@ -111,30 +111,9 @@ h2 {
     color: #064A00;
     text-transform: uppercase;
 }
-#lg {
+#lg, #icon {
     display: none;
 }
-/* Navbar OLD */
-/* .navbar {
-    background-color: #F0EED8;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 50px;
-    vertical-align: center;
-}
-.navbar li {
-    display: inline-block;
-    padding: 10px 70px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #064A00;
-    font-family: "Century Gothic", "Open Sans", sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-}*/
 
 /* Header States ---------------------------------------------*/
 .navbar a:hover {
@@ -151,18 +130,27 @@ h2 {
     .header {
         width: 100%;
         justify-content: space-around;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
-    .icon-txt {
+    .descanso {
         display: none;
     }
-    .icon img {
-        height: 36px;
-        padding-right: 0;
+    .navbar {
+        width: 100%;
     }
     .navbar #navbar-txt {
         display: none;
+    }
+    #icon {
+        display: list-item;
+        padding: 0.2rem 0 0.2rem 0;
+    }
+    #icon img {
+        display: block;
+        height: 36px;
+        width: auto;
+        vertical-align: center;
     }
     #lg {
         display: inline-block;
@@ -174,7 +162,7 @@ h2 {
         width:100%;
         justify-content: space-between;
         flex-wrap: nowrap;
-        padding: 0.5rem 0 0.5rem 2rem;
+        padding: 0.5rem 0 0.5rem 0;
     }
     .navbar li {
         padding: 0.5rem 0 0.5rem 0;
@@ -186,6 +174,9 @@ h2 {
     .navbar i:active {
         color: #0A7E00;
         transition: color .1s ease-in;
+    }
+    #icon img:hover {
+        height: 40px;
     }
 }
 
@@ -222,7 +213,7 @@ h2 {
 .banner h1 {
     font-size: 8rem;
     color: #F7FAF3;
-    padding-top: 80px;
+    padding-top: 90px;
     margin-left: -50px;
 }
 .banner h2 {
@@ -251,8 +242,8 @@ h2 {
     .banner {
         display: block;
         position: absolute;
-        max-height: 310px;
-        padding: 20px 0 0 0;
+
+        padding: 140px 0 60px 0;
     }
     
     #img-container-logo {
@@ -266,7 +257,7 @@ h2 {
         width: 100%;
         position: relative;
         margin: 0 auto;
-        top: -350px;
+        top: -460px;
     }
     .banner h1 {
         font-size: 4rem;
@@ -281,3 +272,4 @@ h2 {
         margin: 0 auto;
     }
 }
+
