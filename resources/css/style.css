@@ -157,7 +157,6 @@ h2 {
         display: block;
         height: 36px;
         width: auto;
-        vertical-align: center;
     }
     #lg {
         display: inline-block;
@@ -282,9 +281,6 @@ h2 {
 }
 
 /* INFO ---------------------------------------------------------------------------------------------------------- */
-.info {
-
-}
 .article {
     margin: 3rem auto;
     background-color: #F0EED8;
@@ -300,8 +296,9 @@ h2 {
 /* Info Media ---------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .article {
-        margin: 3rem 5% 3rem 5%;
+        margin: 3rem auto;
         width: 90%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -312,6 +309,7 @@ h2 {
     }
     .article h1 {
     font-size: 2rem;
+    text-align: center;
     }
 }
 
@@ -328,6 +326,3 @@ h2 {
     height: 150px;
     background-color: #0A7E00;
 }
-
-
-
