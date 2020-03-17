@@ -45,10 +45,17 @@ main {
 h1 {
     font-family: "Viner";
     font-size: 3rem;
+    color: #064A00;
 }
 h2 {
     font-family: "Viner";
     font-size: 2rem;
+}
+
+.anchor {
+    position: relative;
+    top: -120px;
+    visibility: hidden;
 }
 
 /* HEADER ------------------------------------------------------------------- */
@@ -241,8 +248,6 @@ h2 {
 @media only screen and (max-width: 768px) {
     .banner {
         display: block;
-        position: absolute;
-
         padding: 140px 0 60px 0;
     }
     
@@ -273,3 +278,28 @@ h2 {
     }
 }
 
+/* SECTION INFO ---------------------------------------------------------------------------------------------------------- */
+.info {
+
+}
+.article {
+    margin: 3rem 10% 5% 10%;
+    background-color: #F0EED8;
+    width: 80%;
+    height: 500px;
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+   
+/* SOBRE NOSOTROS ------------------------------------------------------------------- */
+.sobre-nosotros h1{
+    font-family: "Century Gothic";
+    font-weight: 900;
+}
+
+/* Info Media ---------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .info {
+    
+    }
+} 
