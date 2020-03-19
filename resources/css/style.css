@@ -363,6 +363,7 @@ p {
         width: 96%;
         padding: 1rem;
         border: none;
+        border-radius: 10px;
     }
     .article h1 {
         font-size: 2rem;
