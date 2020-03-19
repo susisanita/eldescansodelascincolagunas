@@ -51,7 +51,11 @@ h2 {
     font-family: "Viner";
     font-size: 2rem;
 }
-
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #064A00;
+}
 .anchor {
     position: relative;
     top: -120px;
@@ -293,6 +297,27 @@ h2 {
 }
 .article h1 {
     line-height: 1.2;
+    padding-bottom: 1rem;
+}
+.article i{
+    color: #064A00;
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+/* Info States ---------------------------------------------*/
+.article i:hover {
+    font-size: 2.2rem;
+    color: #0A7E00;
+    transition: font-size 0.1s ease-in, color .1s ease-in;
+}
+.article i:active {
+    border-radius: 5px;
+    background-color: #064A00;
+    padding: 0.2rem 0.2rem;
+    margin-right: 0.5rem;
+    color: #F7FAF3;
+    transition: color .1s ease-in, background-color .1s ease-in, font-size .1s ease-in;
 }
 
 /* Info Media ---------------------------------------------*/
@@ -313,6 +338,16 @@ h2 {
     font-size: 2rem;
     text-align: center;
     }
+    .article p {
+        font-size: 0.8rem;
+    }
+    .article i {
+        font-size: 1.6rem;
+        padding-right: 0.8rem;
+    }
+    .article i:hover {
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -323,11 +358,15 @@ h2 {
 .article .location {
     min-height: 300px;
 }
+#direccion {
+    display: inline-flex;
+    align-items: center;
+}
 .location .img-container {
     width: 100%;
     height: auto;
     overflow: hidden;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 .location img {
     max-width: 100%;
