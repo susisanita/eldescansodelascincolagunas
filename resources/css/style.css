@@ -51,10 +51,17 @@ h2 {
     font-family: "Viner";
     font-size: 2rem;
 }
+h3 {
+    font-family: "Century Gothic", "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    color: #064A00;
+    text-transform: uppercase;
+}
 p {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     color: #064A00;
+    line-height: 1.2;
 }
 .anchor {
     position: relative;
@@ -304,6 +311,19 @@ p {
     font-size: 2rem;
     padding-right: 1rem;
 }
+.info-button {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #064A00;
+    color: #F7FAF3;
+    border-radius: 10px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border: none;
+
+}
 
 /* Info States ---------------------------------------------*/
 .article i:hover {
@@ -318,6 +338,13 @@ p {
     margin-right: 0.5rem;
     color: #F7FAF3;
     transition: color .1s ease-in, background-color .1s ease-in, font-size .1s ease-in;
+}
+.info-button:hover {
+    background-color: #0A7E00;
+    
+}
+.info-button:active {
+    font-size: 1rem;
 }
 
 /* Info Media ---------------------------------------------*/
@@ -354,7 +381,51 @@ p {
 /* SOBRE NOSOTROS ------------------------------------------------------------------- */
 
 
-/* CÓMO LLEGAR ------------------------------------------------------------------- */
+
+/* EL ENTORNO ----------------------------------------------------------------------- */
+
+
+
+/* EL BAR --------------------------------------------------------------------------- */
+
+
+/* ACTIVIDADES ---------------------------------------------------------------------- */
+.actividades-container {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.actividades-card {
+    width: 31%;
+    height: auto;
+    /* altura mínima */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #F7FAF3;
+    border-radius: 5px;
+}
+.actividades .img-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.actividades .img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.actividades h3 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.actividades p {
+    padding: 1rem 0;
+}
+
+
+/* CÓMO LLEGAR ---------------------------------------------------------------------- */
 .article .location {
     min-height: 300px;
 }
