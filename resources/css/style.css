@@ -58,11 +58,12 @@ h3 {
     text-transform: uppercase;
     line-height: 1.2;
 }
-p {
+p, li {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     color: #064A00;
 }
+
 .anchor {
     position: relative;
     top: -120px;
@@ -378,7 +379,7 @@ p {
         font-size: 2rem;
         text-align: center;
     }
-    .article p {
+    .article p, .article li {
         font-size: 0.8rem;
     }
     .article i {
@@ -396,8 +397,130 @@ p {
 
 
 /* EL BAR --------------------------------------------------------------------------- */
+.bar-container {
+    display: inline-flex;
+    flex-direction: column;
+}
+.bar h3 {
+    padding-top: 0;
+    padding-bottom: 0.2rem;
+    font-family: "Viner";
+    font-size: 2rem;
+    text-transform: initial;
+}
+#barh3 {
+    padding-top: 2rem;
+}
+.bar-card {
+    /* altura mínima */
+    padding: 1rem;
+    background-color: #F7FAF3;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.bar .img-container {
+    width: 40%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.bar .img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#bbq {
+    width: 57%;
+    display: inline-flex;
+    padding: .5rem;
+}
+#bbq-txt {
+    width: 50%;
+}
+#bbq-txt p {
+    padding: 0;
+}
+#bbq-list {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    padding-left: 5rem;
+    line-height: 2;
+}
+#bbq-list ul {
+    list-style: square;
+}
 
 
+/* Bar Media ---------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .bar-card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-bottom: 1rem;
+    }
+    .bar .img-container {
+        width: 100%;
+    }
+    #bbq {
+        padding-top: 1rem;
+        width: 100%;
+    }
+    #bbq-list {
+        justify-content: center;
+        padding-left: 1rem;
+    }
+    .bar h3 {
+        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 1rem;
+    }
+    #barh3 {
+        padding-top: 1rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .bar-card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        margin-bottom: 1rem;
+    }
+    .bar .img-container {
+        width: 100%;
+    }
+    #bbq {
+        display: inline-flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        width: 100%;
+    }
+    #bbq-list {
+        width: 100%;
+        justify-content: left;
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
+    #bbq-txt {
+        width: 100%;
+    }
+    .bar h3 {
+        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 1rem;
+    }
+    #barh3 {
+        padding-top: 1rem;
+    }
+}
 
 
 /* EL ENTORNO ----------------------------------------------------------------------- */
