@@ -287,7 +287,7 @@ h2 {
     background-color: #F0EED8;
     width: 85%;
     height: auto;
-    min-height: 500px;
+    min-height: 500px;   
     padding: 2rem;
     border: 6px solid #F7FAF3;
 }
@@ -320,11 +320,14 @@ h2 {
 
 
 /* CÓMO LLEGAR ------------------------------------------------------------------- */
+.article .location {
+    min-height: 300px;
+}
 .location .img-container {
     width: 100%;
     height: auto;
     overflow: hidden;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 .location img {
     max-width: 100%;
@@ -335,7 +338,7 @@ h2 {
     display: none;
 }
 
-/* Footer Media ---------------------------------------------*/
+/* Cómo llegar Media ---------------------------------------------*/
 @media only screen and (max-width: 480px) {
     #plano01 {
         display: none;
