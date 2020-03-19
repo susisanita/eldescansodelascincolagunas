@@ -62,8 +62,6 @@ p {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     color: #064A00;
-    line-height: 1.2;
-    text-align: justify;
 }
 .anchor {
     position: relative;
@@ -325,8 +323,8 @@ p {
     font-size: 0.8rem;
     border: none;
     margin-top: 1.5rem;
-
 }
+
 
 /* Info States ---------------------------------------------*/
 .article i:hover {
@@ -427,6 +425,8 @@ p {
 }
 .actividades p {
     padding-top: 1rem;
+    line-height: 1.3;
+    text-align: justify;
 }
 
 /* Info Media ---------------------------------------------*/
