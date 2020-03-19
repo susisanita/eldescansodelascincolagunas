@@ -324,6 +324,16 @@ p {
     border: none;
     margin-top: 1.5rem;
 }
+.article h3 {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.article p {
+    padding-top: 1rem;
+    line-height: 1.3;
+    text-align: justify;
+}
 
 
 /* Info States ---------------------------------------------*/
@@ -385,7 +395,62 @@ p {
 
 
 /* EL ENTORNO ----------------------------------------------------------------------- */
+.entorno-container {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.entorno-card-1, .entorno-card-2 {
+    /* altura mínima */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #F7FAF3;
+    border-radius: 5px;
+}
+.entorno-card-1 {
+    width: 63%;
+    height: auto;
+}
+.entorno-card-2 {
+    width: 33%;
+    height: auto;
+}
+.entorno .img-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.entorno .img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#img-gredos-mobile {
+    display: none;
+}
 
+/* Entorno Media ---------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .entorno-container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    .entorno-card-1, .entorno-card-2 {
+        width: 100%;
+        justify-items: center;
+        margin-bottom: 1rem;
+    }
+    #img-gredos-mobile {
+        display: block;
+    }
+    #img-gredos-web {
+        display: none;
+    }
+}
 
 
 /* EL BAR --------------------------------------------------------------------------- */
@@ -429,7 +494,7 @@ p {
     text-align: justify;
 }
 
-/* Info Media ---------------------------------------------*/
+/* Actividades Media ---------------------------------------------*/
 @media only screen and (max-width: 768px) {
     .actividades-container {
         display: inline-flex;
