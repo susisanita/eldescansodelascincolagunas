@@ -393,7 +393,112 @@ p, li {
 
 
 /* SOBRE NOSOTROS ------------------------------------------------------------------- */
+.article.nosotros {
+    padding: 0;
+}
+.nosotros .img-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.nosotros .img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.nosotros h1 {
+    padding: 2rem 0 0 2rem;
+}
+.nosotros-container {
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.nosotros-container p {
+    padding: 0;
+}
+.nosotros-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 2rem 2rem;
+}
+.nosotros-txt-1 {
+    width: 39%;
+}
+.nosotros-img-container {
+    width: 50%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    top: 70px;
+    /* right: 20px; */
+}
+.nosotros-img-container img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#alzado02 {
+    display: none;
+}
 
+/* Nosotros Media ---------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .nosotros-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem 3rem 2rem;
+    }
+    .nosotros h1 {
+        padding: 2rem 0 0 0;
+    }
+    .nosotros-txt-1 {
+        width: 100%;
+    }
+    .nosotros-img-container {
+        width: 100%;
+        position: static;
+        padding-top: 1.5rem;
+    }
+    #alzado01 {
+        display: none;
+    }
+    #alzado02 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nosotros-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.5rem 3rem 1.5rem;
+    }
+    .nosotros h1 {
+        padding: 2rem 0 0 0;
+    }
+    .nosotros-txt-1 {
+        width: 100%;
+    }
+    .nosotros-img-container {
+        width: 100%;
+        position: static;
+        padding-top: 1.5rem;
+    }
+    #alzado01 {
+        display: none;
+    }
+    #alzado02 {
+        display: block;
+    }
+}
 
 
 /* EL BAR --------------------------------------------------------------------------- */
